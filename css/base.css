@@ -3,8 +3,11 @@
 }
 /* Mobile Media Queries */
 @media screen and (min-width: 0px) and (max-width: 881px) {
-	.section__title{
+	.hide-on-mobile{
 		display: none;
+	}
+	#gallery1, #gallery2, .section__more-inner--bg1{
+		display: none !important;
 	}
 }
 body {
