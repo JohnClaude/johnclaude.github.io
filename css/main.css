@@ -3,7 +3,7 @@ body {
 }
 
 .main {
-    margin: 30px 50px;
+    margin: 30px auto;
     height: 90vh;
 }
 
@@ -38,4 +38,28 @@ body {
 
 footer {
     text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+    .logo {
+        width: 250px;
+    }
+
+    .occupation {
+        font-size: 28px;
+    }
+
+    .cta, .link {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    .logo {
+        width: 300px;
+    }
 }
