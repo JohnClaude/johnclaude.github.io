@@ -3,8 +3,8 @@ import { resolve } from "path";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `masiphumelele`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Un John Claude`,
+    siteUrl: `https://www.johnclaude.com`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -49,12 +49,12 @@ const config: GatsbyConfig = {
         each_bow_size: 1, // optional
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     // trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `ADD YOUR TRACKING ID HERE`,
+      },
+    },
     `gatsby-transformer-remark`,
   ],
 };

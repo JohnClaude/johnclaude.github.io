@@ -24,8 +24,8 @@ const IndexPage: React.FC<PageProps> = ({ data }: any) => {
           shadow={false}
           color="transparent"
           className="m-0 rounded-none"
-        >
-        </CardHeader>
+          children={undefined}
+        ></CardHeader>
         <Link to={blogUrl}>
           <CardBody>
             <Typography variant="h5" color="blue-gray">
@@ -35,13 +35,8 @@ const IndexPage: React.FC<PageProps> = ({ data }: any) => {
               {edge.node.excerpt}
             </Typography>
           </CardBody>
-          <CardFooter className="flex items-center justify-between border-b-8 border-black">
-            <Typography
-              color="blue-gray"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-            >
-              Read full story
-            </Typography>
+          <CardFooter className="flex items-center justify-between border-b-8 border-orange-900">
+            {/* TODO: Add tags here */}
           </CardFooter>
         </Link>
       </Card>
@@ -59,7 +54,7 @@ const IndexPage: React.FC<PageProps> = ({ data }: any) => {
 
         <div className="sm:mx-8 grid grid-cols-3 grid-flow-row justify-center place-items-center gap-y-16">
           <div className="col-span-1 inline-flex row-start-1 col-start-2 justify-center">
-            <h1 className="font-bold text-3xl">Thoughts</h1>
+            <h1 className="font-bold text-3xl">Writings</h1>
           </div>
         </div>
         <div className="my-5">
@@ -80,7 +75,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 140)
           frontmatter {
-            type
+            tags
             slug
             title
             author
@@ -95,7 +90,8 @@ export default IndexPage;
 
 export const Head: HeadFC = () => (
   <>
-    <title>Masiphumelele</title>
-    <meta name="description" content="Your description" />
+    <title>John Claude</title>
+    <meta name="description" content="Writings of a money movement Engineer." />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
   </>
 );

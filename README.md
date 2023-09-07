@@ -1,3 +1,3 @@
-## Masiphumelele
+## Un John Claude
 
-Repository for https://masiphumelele.netlify.app/
+Repository for my personal website

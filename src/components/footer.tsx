@@ -18,11 +18,11 @@ const FooterComponent = ({ children }: any) => {
           <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
             <li>
               <Typography
-                href="https://www.instagram.com/the_masi_story/"
+                href="https://www.linkedin.com/in/unjohnclaude/"
                 color="blue-gray"
                 className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
               >
-                LINKEDIN
+                CONNECT ON LINKEDIN
               </Typography>
             </li>
           </ul>
